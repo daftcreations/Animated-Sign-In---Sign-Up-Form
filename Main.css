@@ -3,6 +3,7 @@ body{
     padding: 0px;
     background-image: url(BG.jpg);
     background-size: 100% 100%;
+    perspective: 800px;
 }
 #main,#signUpForm{
     height: 400px;
@@ -84,12 +85,12 @@ a{
     100%{transform: translate(-50%,-50%) rotateY(180deg);}
 }
 @-webkit-keyframes hideSignIn{
-    0%{transform: translate(-50%,-50%) rotateY(180deg);}
+    0%{transform: translate(-50%,-50%) rotateY(-180deg);}
     100%{transform: translate(-50%,-50%) rotateY(0deg);}
 }
 @-webkit-keyframes showSignIn{
     0%{transform: translate(-50%,-50%) rotateY(0deg);}
-    100%{transform: translate(-50%,-50%) rotateY(180deg);}
+    100%{transform: translate(-50%,-50%) rotateY(-180deg);}
 }
 @-webkit-keyframes hideSignUp{
     0%{transform: translate(-50%,-50%) rotateY(180deg);}
